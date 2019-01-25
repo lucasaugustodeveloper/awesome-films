@@ -6,6 +6,6 @@ export default props => {
   })
 
   return genres.map(genre => (
-    <span className="badge" key={ genre.name }>{ genre.name }</span>
+    <div className="badge" key={ genre.name }>{ genre.name }</div>
   ))
 }
