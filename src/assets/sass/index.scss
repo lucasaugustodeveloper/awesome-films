@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Lato');
 @import
     './partials/grid';
 
@@ -14,4 +15,16 @@
         display: block;
         visibility: hidden;
     }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+}
+img {
+    max-width: 100%;
+    width: 100%;
 }
