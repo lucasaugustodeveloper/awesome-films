@@ -1,0 +1,57 @@
+@import
+  '../assets/sass/partials/placeholders';
+
+.film {
+  background: orange;
+
+  > div {
+    margin-top: 5rem;
+  }
+
+  &_header {
+    font: {
+      family: 'Abel';
+      size: 2.5rem;
+    }
+    @extend %text-center;
+
+    padding: .5rem 0;
+
+    background: dodgerblue;
+  }
+
+  &_list {
+    margin-top: 2rem;
+  }
+
+  &_item {
+    &_title {
+      @extend %title-film;
+
+      margin: {
+        bottom: 1.5rem;
+      }
+
+      background: dodgerblue;
+    }
+
+    &_description {
+      font: {
+        family: 'Lato', sans-serif;
+        size: 1.1rem;
+      }
+
+      margin: {
+        bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+.form-control {
+  border: none;
+  border-radius: .2rem;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 2rem;
+}
