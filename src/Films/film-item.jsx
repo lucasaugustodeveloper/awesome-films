@@ -7,13 +7,13 @@ export default props => {
 
     return films.map(film => (
       <div className="film_item row" key={film.id}>
-        <div className="col-lg-2">
+        <div className="film_item_img col-lg-2">
           <img
             src={'https://image.tmdb.org/t/p/w185_and_h278_bestv2' + film.poster_path }
             alt={ film.title }
           />
         </div>
-        <div className="col-lg-8">
+        <div className="film_item_info col-lg-8">
           <div className="film_item_title">
             { film.title }
           </div>
