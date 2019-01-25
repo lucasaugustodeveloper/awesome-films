@@ -2,8 +2,6 @@
   '../assets/sass/partials/placeholders';
 
 .film {
-  background: orange;
-
   > div {
     margin-top: 5rem;
   }
@@ -17,7 +15,8 @@
 
     padding: .5rem 0;
 
-    background: dodgerblue;
+    background: #00648F;
+    color: #00EAE2;
   }
 
   &_list {
@@ -25,14 +24,28 @@
   }
 
   &_item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &_info {
+      margin-left: -1rem;
+
+      background: #EAEAEA;
+    }
+
     &_title {
       @extend %title-film;
 
       margin: {
+        right: -.5rem;
         bottom: 1.5rem;
+        left: -.5rem;
       }
+      padding-left: 6rem;
 
-      background: dodgerblue;
+      background: #00648F;
+      color: #00EAE2;
     }
 
     &_description {
@@ -54,4 +67,30 @@
   width: 100%;
   height: 2.5rem;
   padding-left: 2rem;
+  border-radius: 50rem;
+
+  background: #EAEAEA;
+  color: #00648F;
+}
+
+.badge {
+  font: {
+    family: 'Abel', sans-serif;
+    size: 1rem;
+  }
+
+  display: inline-block;
+  height: 100%;
+  padding: .04rem 1rem;
+  border-radius: 5rem;
+  border-style: solid;
+  border-width: .1rem;
+
+  background: #fff;
+  border-color: #00648F;
+  color: #00648F;
+
+  &:not(:first-child) {
+    margin-left: 1rem;
+  }
 }
