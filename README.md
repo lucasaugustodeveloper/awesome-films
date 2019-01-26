@@ -1,6 +1,6 @@
 # Started Kit React
 
-> started project with react, webpack is sass
+> development web app of films
 
 ## Stack Project
 - Module Bundle [Webpack](https://webpack.js.org)
@@ -10,8 +10,22 @@
 ## Structure Folder
     .
     |_ src/
-    |   |_ App
+    |   |_ App/
     |   |   |_ App.jsx
+    |   |_ assets/
+    |   |   |_ sass
+    |   |   |   |_ partials/
+    |   |   |   |   |_ _grid.scss
+    |   |   |   |   |_ _placeholders.scss
+    |   |_ Films/
+    |   |   |_ film-detail.jsx
+    |   |   |_ film-genres.jsx
+    |   |   |_ film-input.jsx
+    |   |   |_ film-item.jsx
+    |   |   |_ film.jsx
+    |   |   |_ film.scss
+    |   |_ services/
+    |   |   |_ api.js
     |   |_ index.jsx
     |_ .babelrc
     |_ .gitignore
@@ -34,5 +48,5 @@ $ yarn install
 ```
 **3 -** Run static server and livereload
 ```sh
-$ npm run dev
+$ yarn run dev
 ```
