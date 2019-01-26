@@ -3,7 +3,6 @@ import './film.scss'
 import React, { Component, Fragment } from 'react';
 import api from '../services/api'
 
-import Header from '../components/header'
 import FilmItem from './film-item'
 import FilmInput from './film-input'
 

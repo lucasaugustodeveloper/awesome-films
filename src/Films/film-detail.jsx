@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import api from '../services/api'
 
-import Header from '../components/header'
-
 class FilmDetail extends Component {
   state = {
     film: {},
