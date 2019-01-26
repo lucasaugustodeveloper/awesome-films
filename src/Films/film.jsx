@@ -43,7 +43,9 @@ export default class Films extends Component {
   render() {
     return (
       <Fragment>
-        <Header title={ this.state.title } />
+        <header className="film_header row">
+          Movies
+        </header>
 
         <div className="film row">
           <div className="col-lg-10 col-lg-offset-2">
