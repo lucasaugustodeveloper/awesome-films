@@ -3,7 +3,7 @@ import './film.scss'
 import React, { Component, Fragment } from 'react';
 import api from '../services/api'
 
-import FilmHeader from './film-header'
+import Header from '../components/header'
 import FilmItem from './film-item'
 import FilmInput from './film-input'
 
@@ -43,9 +43,8 @@ export default class Films extends Component {
   render() {
     return (
       <Fragment>
-        <FilmHeader
-          title={ this.state.title }
-        />
+        <Header title={ this.state.title } />
+
         <div className="film row">
           <div className="col-lg-10 col-lg-offset-2">
             <FilmInput />
